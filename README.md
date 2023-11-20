@@ -16,9 +16,15 @@ todas as funcionalidades do protocolo sejam utilizadas nos clientes e no servido
 
 Quais os comandos que o boot irá interpretar?
 ● U -> Lista os usuários conectados ao servidor
+
 ● C -> Lista as configurações dos usuários conectados (CPU, Memória, Disco, ...)
+
 ● i ip:______ -> Traz os aplicativos instalados nos clientes especificados pelo IP
+
 ● N t:______ -> Histórico de navegação da aplicação especificada
+
 ● u ip:______ -> Traz informações detalhadas sobre o usuário especificado
+
 ● off -c ip:_____ -> Desconecta de maneira manual o cliente especificado (que está conectado em segundo plano)
+
 ● off -s -> Desconecta de maneira manual o servidor (que está rodando em segundo plano)
