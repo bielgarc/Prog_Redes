@@ -4,8 +4,11 @@
 Computadores. O projeto em si visa o desenvolvimento de uma aplicação cliente/servidor com a utilização de um boot no Telegram.
 
 Qual tipo de Protocolo:
+
 ● TCP
+
 Qual o motivo de escolha deste protocolo?
+
 ● O protocolo foi escolhido com o intuito de ter uma melhor experiência com o
 desenvolvimento do projeto. Pois o mesmo, fornece algumas características e
 funcionalidades mais relevantes do que o protocolo UDP, dentre elas, a confiabilidade 
@@ -15,6 +18,7 @@ no Python que depende da conexão pré-estabelecida para funcionar, garante que
 todas as funcionalidades do protocolo sejam utilizadas nos clientes e no servidor.
 
 Quais os comandos que o boot irá interpretar?
+
 ● U -> Lista os usuários conectados ao servidor
 
 ● C -> Lista as configurações dos usuários conectados (CPU, Memória, Disco, ...)
