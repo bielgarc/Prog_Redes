@@ -1,4 +1,4 @@
-                                                                                         PROJETO - Aplicação Cliente/Servidor com boot no Telegram
+                                                           PROJETO - Aplicação Cliente/Servidor com boot no Telegram
 ● Esse repositório foi criado com a perspectiva de mostrar o 
 desenvolvimento do projeto para a disciplina Programação para Redes, 
 do curso superior Tecnologia em Redes de Computadores. O projeto em si visa o 
