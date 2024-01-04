@@ -1,5 +1,6 @@
 import socket
 import threading
+import functions from *
 
 SERVER = '0.0.0.0'
 PORT = 5678
@@ -26,7 +27,10 @@ def interacao_client(conexao, cliente):
 def main():
     print('Recebendo Mensagens...\n\n')
 
-    tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   def main():
+    bot_thread = threading.Thread(target=iniciar)
+    bot_thread.start()
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     try:
         tcp_socket.bind((SERVER, PORT))
@@ -42,5 +46,22 @@ def main():
         print(f'Erro no socket: {os_err}')
     finally:
         tcp_socket.close()
+
+def iniciar():
+    update_id = None
+    token = 'Substitua pelo seu TOKEN'
+    url_base = f'https://api.telegram.org/bot{token}/'
+
+    while True:
+        atualizacao = obtendo_mensagens(update_id, url_base)
+        mensagens = atualizacao
+        if mensagens:
+            for mensagem in mensagens:
+                update_id = mensagem.get('update_id', update_id)
+                chat_id = mensagem['message']['from']['id']
+
+                resposta = comando(mensagem, chat_id, url_base)
+                respondendo(resposta, chat_id, url_base)
+    iniciar()
 
 main()
